@@ -14,6 +14,8 @@
 		C881095221D9DEC7007956B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C881095021D9DEC6007956B7 /* LaunchScreen.storyboard */; };
 		C881095D21D9DEC7007956B7 /* make_filterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881095C21D9DEC7007956B7 /* make_filterTests.swift */; };
 		C881096821D9DEC7007956B7 /* make_filterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881096721D9DEC7007956B7 /* make_filterUITests.swift */; };
+		C881097621D9DF76007956B7 /* landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = C881097521D9DF76007956B7 /* landscape.png */; };
+		C881097821D9DF9B007956B7 /* ime.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C881097721D9DF9B007956B7 /* ime.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C881096321D9DEC7007956B7 /* make_filterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = make_filterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C881096721D9DEC7007956B7 /* make_filterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = make_filterUITests.swift; sourceTree = "<group>"; };
 		C881096921D9DEC7007956B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C881097521D9DF76007956B7 /* landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landscape.png; sourceTree = "<group>"; };
+		C881097721D9DF9B007956B7 /* ime.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ime.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				C881094E21D9DEC6007956B7 /* Assets.xcassets */,
 				C881095021D9DEC6007956B7 /* LaunchScreen.storyboard */,
 				C881095321D9DEC7007956B7 /* Info.plist */,
+				C881097521D9DF76007956B7 /* landscape.png */,
+				C881097721D9DF9B007956B7 /* ime.jpeg */,
 			);
 			path = make_filter;
 			sourceTree = "<group>";
@@ -229,9 +235,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C881097821D9DF9B007956B7 /* ime.jpeg in Resources */,
 				C881095221D9DEC7007956B7 /* LaunchScreen.storyboard in Resources */,
 				C881094F21D9DEC6007956B7 /* Assets.xcassets in Resources */,
 				C881094D21D9DEC5007956B7 /* Main.storyboard in Resources */,
+				C881097621D9DF76007956B7 /* landscape.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6LWV3C3ZH;
 				INFOPLIST_FILE = make_filter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6LWV3C3ZH;
 				INFOPLIST_FILE = make_filter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

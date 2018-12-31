@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,55 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="make_filter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ime.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="bs6-yq-2RM">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="C6Q-kF-Wj1">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C6Q-kF-Wj1" secondAttribute="height" multiplier="29:2" id="3y5-T1-jEf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="7iQ-w9-5rY">
+                                <rect key="frame" x="0.0" y="329" width="667" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7iQ-w9-5rY" secondAttribute="height" multiplier="29:2" id="sIv-Hn-nZ5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bs6-yq-2RM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="57e-eb-T06"/>
+                            <constraint firstItem="C6Q-kF-Wj1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="G8b-1P-ZvQ"/>
+                            <constraint firstItem="7iQ-w9-5rY" firstAttribute="top" secondItem="C6Q-kF-Wj1" secondAttribute="bottom" constant="283" id="GJM-ma-BIg"/>
+                            <constraint firstItem="7iQ-w9-5rY" firstAttribute="top" secondItem="C6Q-kF-Wj1" secondAttribute="bottom" constant="283" id="Gfj-Tx-DnB"/>
+                            <constraint firstItem="bs6-yq-2RM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KVj-MS-AVq"/>
+                            <constraint firstAttribute="bottom" secondItem="7iQ-w9-5rY" secondAttribute="bottom" id="Pa1-nb-3eA"/>
+                            <constraint firstItem="C6Q-kF-Wj1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VU5-wd-8X7"/>
+                            <constraint firstItem="C6Q-kF-Wj1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XZn-n8-ZRn"/>
+                            <constraint firstItem="bs6-yq-2RM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aKg-Jd-xEb"/>
+                            <constraint firstItem="7iQ-w9-5rY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c7q-9M-cUf"/>
+                            <constraint firstItem="bs6-yq-2RM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gKP-EI-40B"/>
+                            <constraint firstItem="7iQ-w9-5rY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gwg-Do-GBD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="input" destination="bs6-yq-2RM" id="DfB-m1-i8W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="29.23538230884558" y="48.799999999999997"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ime.jpeg" width="3264" height="1836"/>
+        <image name="landscape.png" width="1920" height="1080"/>
+    </resources>
 </document>
